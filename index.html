@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Slab:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Slab:wght@200&display=swap");
+      @keyframes zoom-in {
+        0% {
+          transform: scale(1, 1);
+        }
+        100% {
+          transform: scale(1.2, 1.2);
+        }
+      }
+      @keyframes zoom-out {
+        0% {
+          transform: scale(1.2, 1.2);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+      }
+      #wrapper{
+width: 800px;
+min-height: 200px;
+margin: auto;
+
+}
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      
+      body {
+        background-color: #c8c8c8;
+        
+      }
+      .bar {
+        background-color: grey;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 3.24%;
+      }
+      footer{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        margin-top: 50px;
+        
+      }
+
+      .foot{
+        background-color: rgb(176, 171, 158);
+      }
+      .logo {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        border-radius: 50px;
+        animation: zoom-out 0.6s ease-out;
+        animation-fill-mode: forwards;
+      }
+
+      .logo:hover {
+        cursor: pointer;
+        animation: zoom-in 0.6s ease-out;
+        animation-fill-mode: forwards;
+      }
+
+      .logodiv {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+      }
+      
+      .old-channel {
+        font-weight: 500;
+        font-size: 16px;
+        color: #edf0f1;
+        text-decoration: none;
+        padding: 9px 25px;
+        background-color: rgba(1, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s easy 0s;
+        animation: zoom-out 0.15s ease-out;
+        animation-fill-mode: forwards;
+      }
+      .old-channel:hover {
+        background-color: rgba(1, 136, 169, 0, 8);
+        animation: zoom-in 0.2s ease-out;
+        animation-fill-mode: forwards;
+      }
+      .title {
+        font-weight: 500;
+        font-size: 25px;
+        color: #edf0f1;
+        text-decoration: none;
+        font-family: "Raleway", Arial;
+      }
+      .intro {
+        font-family: "Roboto Slab", Arial;
+        font-size: 40px;
+        font-weight: 700;
+        font-style: italic;
+        padding-top: 100px;
+        padding-left: 30px;
+        display: block;
+      }
+
+      .aromatic-tech {
+        width: 185px;
+        height: 185px;
+        border-radius: 30px 50px 30px 50px;
+      }
+
+      .para {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 27px;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding-top: 45px;
+        padding-left: 52px;
+        width: 80%;
+        min-width: 50%;
+      }
+      .para-intro {
+        
+        display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px; 
+  line-height: 1.5;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 20px; 
+  box-sizing: border-box;
+      }
+
+      .container {
+        text-align: center;
+}
+
+
+      .aromatic-tech-yt {
+        object-fit: cover;
+        margin-left: 200px;
+        width: 185px;
+        height: 185px;
+        border-radius: 50px 30px 50px 30px;
+      }
+
+      .butterfly-intro {
+        display: inline-block;
+        width: 700px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+        grid-gap: 20px;
+        align-items: center;
+      }
+
+      .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .box {
+      flex: 1;
+      max-width: 100%;
+      text-align: center;
+      margin: 10px;
+      padding: 20px;
+      
+    }
+
+    .box img {
+      height: auto;
+      border-radius: 10%;
+      height: 350px;
+      width: 250px;
+    }
+    .boxes {
+      height: auto;
+      border-radius: 10%;
+      height: 250px;
+      width: 350px;
+    }
+
+      .flex-container{
+        display:flex;
+        flex-direction: column;
+      }
+      .flex-item{
+        flex: 1 1 auto;
+        margin-bottom: 55px;
+        margin: 120px;
+      }
+
+      .video-container {
+      position: relative;
+      overflow: hidden;
+      width: 560px; /* Set the width of the video container */
+      height: 315px; /* Set the height of the video container */
+      border-radius: 15px; /* Set the border radius for rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
+      
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none; /* Remove iframe border */
+      border-radius: 15px; /* Match the border radius of the container */
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
+      gap: 20px; /* Adjust the gap between columns */
+    }
+
+    .vidSpace {
+      padding-top: 25px;
+    }
+    
+     .Arduino{
+      font-family: "Roboto Slab", Arial;
+        
+        font-style: italic;
+        font-weight: 700;
+        font-size: 45px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-bottom: 45px;
+        text-align: center
+     }
+      .space {
+        padding-left: 160px;
+        padding-top: 140px;
+      }
+      .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .gridshort{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+      }
+      .content1{
+        display: inline-block;
+        margin-left: 120px;
+        margin-bottom: 95px;
+      }
+      .content2{
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      .q1 {
+        font-family: "Roboto Slab", Arial;
+        display: inline-block;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 40px;
+        padding-top: 10px;
+        padding-left: 20px;
+      }
+      .ans1 {
+        line-height: 27px;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding-left: 52px;
+        padding-top: 42px;
+        width: 80%;
+      }
+      .ans1x{
+        line-height: 27px;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding-left: 52px;
+        padding-top: 42px;
+        width: 80%;
+        text-align: left;
+      }
+      .list1 {
+        
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 25px;
+        width: 80%;
+        padding-bottom: 15px;
+      }
+
+      .Ulist{
+        display: inline-block;
+        padding-left: 100px;
+        padding-top: 25px;
+        text-align: left;
+      }
+      
+      
+      .macbook1, .macbook2, .macbook3{
+        height: 240px;
+        width: 180px;
+        
+      }
+      .pic1{
+        padding-top: 0px;
+        padding-left: 20px;
+      }
+
+      .macbook1 {
+        
+      border-radius: 30px;
+      object-fit: cover;
+      margin-left: 100px;
+      }
+      .macbook2 {
+        height: 190px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-left: 50px;
+      }
+      .macbook3 {
+       object-fit: cover;
+       border-radius: 30px;
+       margin-left: 50px;
+      }
+      .picalign{
+        display: inline-block;
+      }
+      .qcen{
+        font-family: "Roboto Slab", Arial;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 50px;
+        padding-bottom: 42px;
+      text-align: center;
+      }
+      .cen1{
+        text-align: center;
+        line-height: 27px;
+        font-family: sans-serif;
+        font-size: 30px;
+        text-align: left;
+    list-style-position: inside;
+
+      }
+      li {
+        
+        line-height: 27px;
+        font-family: sans-serif;
+        font-size: 20px;
+        list-style-type: circle;
+      }
+      .box h3 {
+  font-size: 32px; 
+  padding-bottom :30px;
+}
+    .central{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      .centre-copy {
+        display: flex;
+  align-items: center;
+  line-height: 27px;
+  font-family: sans-serif;
+  font-size: 20px;
+  width: 80%;
+  min-width: 50%;
+  padding: 20px;
+  text-align: left;
+      }
+      .footext{
+        padding-top: 10px;
+        font-family: Arial;
+        font-style: italic;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .footspace{
+        padding-top: 60px;
+      }
+
+      .conclusion{
+        font-family: "Roboto Slab", Arial;
+        font-size: 40px;
+        font-weight: 700;
+        font-style: Bold;
+        padding-top: 100px;
+        padding-left: 30px;
+        display: block;
+        text-align: center;
+      }
+      .ctext{
+        line-height: 27px;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding-left: 52px;
+        padding-top: 42px;
+        text-align: center;
+       
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="bar">
+      <header>
+        <div class="logodiv">
+          <img
+            class="logo"
+            src="Images/ales-nesetril-Im7lZjxeLhg-unsplash (1).jpg"
+            alt="computer open"
+          />
+        </div>
+        <nav>
+          <p class="title">Project Portfolio</p>
+        </nav>
+        <a class="cta" href="https://www.linkedin.com/in/sudovish"
+          ><button class="old-channel">Linkedin profile</button></a
+        >
+      </header>
+    </div>
+
+    <div class="intro"><center>Who am I?</center></div>
+    <div class="container">
+      <p class="centre-copy">
+       Hello, I'm Vaishhnav, an enthusiastic engineering student at Simon Fraser University. My journey into the world of technology began at a young age, fueled by a natural curiosity about hardware and software. In high school, I learned about the fundamentals of computers, exploring chips, and electrical components, laying the foundation for my passion.
+      </p>
+      <p class="centre-copy">
+        As I progressed, my fascination with technology evolved into hands-on experiences. I initiated personal projects that allowed me to apply my knowledge and skills, solidifying my understanding of both hardware and software. Now, as I pursue my degree in Computer Engineering at SFU, I am excited to continue this journey, aiming to blend academic learning with real-world applications. I look forward to completing my degree and further contributing to the ever-evolving landscape of technology.
+      </p>
+      <p class="centre-copy">
+        Here are some projects I worked on, including this website which I developed from scratch using HTML and CSS: 
+      </p>
+    </div>
+
+
+    <div class="gridshort">
+  
+    <div class="flex-item">
+      <div class="content2">
+        <p class="q1">Xbox Controller Repair - December 2023</p>
+        <p class="ans1">
+          Upon acquiring a new game controller, I encountered an annoyance during gameplay—the vibration motors were generating excessive noise, diminishing the overall gaming experience. Determined to find a solution, I embarked on a personal project to address the issue and improve the functionality of the controller.
+        </p>
+      
+    </div>
+  
+      <ul class="Ulist">
+        <li class="list1">Diagnosed the issue by opening controller and testing</li>
+        <li class="list1">
+           Added cushoning tape to reduce noise which worked surprisingly well
+        </li>
+        <li class="list1">
+         Learned about the inner working of a controller.
+       </li>
+      </ul>
+     
+      
+      </div>
+      <div class id="wrapper" >
+
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/muX1clG4ChY?si=D_Hv2357bAlqxg-4" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div > 
+
+  </div>
+</div>
+
+
+
+    <div class="grid">
+      <div class="pic1"> 
+              <img class = "macbook1" src="images/repairs/faultystorage.jpg" alt="macbook cinimatic shot">
+        <div class="picalign"> <img class = "macbook2" src="images/repairs/storage repair.jpg" ></div>
+        <div class ="picalign"> <img class = "macbook3" src="images/repairs/macbookrepair.jpg" ></div>
+      </div>
+      
+      <div class="content1">
+        <p class="q1">Macbook Repairs - MAY 2023</p>
+        <p class="ans1">
+          From a young age, the thought of owning a MacBook fueled my passion for technology. However, financial constraints posed a challenge. Undeterred, I devised a resourceful strategy to fulfill my dream. So, I started acquiring faulty MacBook’s through Facebook Marketplace. My goal was to refurbish these devices and make them fully operational for resale or personal use. 
+        <p class="ans1">One notable achievement within this endeavor was the successful repair of a MacBook’s storage drive. The issue was identified as a faulty capacitor, which I skillfully resoldered, breathing new life into the computer and restoring it to a completely usable state.</p>
+          <ul class="Ulist">
+          <li class="list1">Perfected soldering skills by replacing a dead capacitor</li>
+          <li class="list1">
+            Learned to diagnose and isolate issues through deduction 
+          </li>
+          <li class="list1">Marketed refurbished macbooks</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="grid">
+      
+      <div class="content1">
+        <p class="q1">Easybin Team project - SEPTEMBER 2022</p>
+        <p class="ans1">
+          An innovative initiative aimed at assisting elderly individuals in effortlessly managing their household waste. The project involved the design and implementation of a robot capable of lifting and moving a trash bin, controlled through a user-friendly mobile app. Through this hands-on experience, I gained valuable insights into the collaborative nature of product development through hand- on experience . Working within a team, I actively contributed to coding, video editing and active suggestions on creative ways to make the product easy to use, emphasizing the significance of effective communication and cooperation.
+          <ul class="Ulist">
+          <li class="list1"> I acquired collaborative problem solving skills</li>
+          <li class="list1">
+           Understanding holistic product development lifecycle
+          </li>
+         
+          </ul>
+        </p>
+      </div>
+      <div class id="wrapper" >
+    
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ce_ipN8IUaw?si=TXNwCsOOjQynEPFt" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+   
+     <p class = "Arduino"> Arduino Projects - 2021 ONWARDS </p>
+    <div class="grid-container">
+      <div class="box">
+        <h3>Drone Controller </h3>
+        <img src="images/drone controller/dronme controlller.jpg" alt="drone controller">
+        <p class = "ans1x">I created a dedicated controller for my drone, addressing the limitation of controlling it using only a mobile app. Despite its complexity, I completed the project in incremental steps, gaining valuable insights into circuit design, code and wireless communication. Here are some ways this endevour helped me gain practical experiance: </p>
+        <ul class="Ulist">
+          <li class="list1">Explored the capabilities of the ESP-32 WiFi chip controller, gaining hands-on experience in wireless communication and IoT device development.</li>
+          <li class="list1">
+            Designed, built, and meticulously tested a custom circuit, refining my skills in electronic prototyping and troubleshooting. Learned the importance of rigorous testing for optimal performance.
+          </li>
+          <li class="list1">Successfully created a functional electronic device from the ground up, gaining insights into component selection, circuit design, and the overall process of bringing an idea to life.</li>
+          </ul>
+      </div>
+    
+      <div class="box">
+        <h3>Digital clock </h3>
+        <img src="images/clock/cam.jpg" alt="Image 2">
+        
+        <p class = "ans1x">I created a multifunctional clock that displays date and time, incorporating features such as accounting for leap years adding an extra day to February. Additionally, I designed it so that the date and time with buttons. This project taught me how to use external I2C Liquid Crystal Displays by utilizing C++ libraries to accomplish my goals. Some experiance I gained are:  </p>
+        <ul class="Ulist">
+          <li class="list1">Developed problem-solving skills by addressing complexities such as leap years and ensuring accurate timekeeping, showcasing a logical and systematic approach to challenges in the project.</li>
+          <li class="list1">
+            Learned to program and control an embedded system, integrating functionalities like date and time display using C++ libraries.
+          </li>
+          <li class="list1">Acquired expertise in integrating external hardware components, specifically I2C Liquid Crystal Displays which helped me in future projects.</li>
+          </ul>
+      </div>
+    
+    </div>
+   
+    <div class="gridshort">
+  
+      <div class="flex-item">
+        <div class="content2">
+          <p class="q1">Internet Light</p>
+          <p class="ans1">
+            Developed a web-controlled LED system using a Raspberry Pi, ESP32, and Linux. Despite using existing code, acquired valuable skills in Linux administration, domain management, and implemented Cloudflare for online accessibility. Some skills I aquired are: 
+          </p>
+        
+      </div>
+    
+        <ul class="Ulist">
+          <li class="list1">I learned about networking and how to self-host a website</li>
+          <li class="list1">
+           Experimented with linux and leant to configure various things liek Msql, websockets etc 
+          </li>
+          <li class="list1">
+            Learned IOT related tasks like connecting and controlling a microcontroller through a raspberrypi. 
+           </li>
+
+        </ul>
+       
+        
+        </div>
+        <div class id="wrapper" >
+  
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pKSCUZrxQ5I?si=3cE4l2yZS8tryWfE frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  
+<div>
+  <p class = "conclusion">Thank you for exploring my portfolio</p>
+   <p class= "ctext"> I hope you enjoyed learning about my journey and projects. If you have any questions, collaboration opportunities, or just want to connect, feel free to reach out. I look forward to hearing from you!</p>
+</div>
+
+<div class="foot">
+      <footer>
+        <div class="footspace">
+
+        
+        <div class="footext">
+          HTML/CSS developed by me
+        </div>
+
+        <div class="footext">
+          Website hosted on github
+        </div>
+        
+        
+      </div>
+      </footer>
+    </div>
+    
+      
+    
+  </body>
+</html>
