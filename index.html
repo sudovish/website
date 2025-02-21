@@ -115,19 +115,29 @@ margin: auto;
         animation: zoom-in 0.2s ease-out;
         animation-fill-mode: forwards;
       }
+
+  
+
+
       .title {
-        font-weight: 500;
-        font-size: 25px;
-        color: #edf0f1;
-        text-decoration: none;
-        font-family: "Raleway", Arial;
+        font-weight: 500; 
+    font-size: 35px; 
+    color: #edf0f1; 
+    text-decoration: none; 
+    font-family: "Raleway", Arial, sans-serif; 
+    letter-spacing: 1px; 
+    padding: 20px 30px; 
+    display: inline-block;
+
       }
+    
       .intro {
         font-family: "Roboto Slab", Arial;
-        font-size: 40px;
+        font-size: 70px;
         font-weight: 700;
         font-style: italic;
         padding-top: 100px;
+        padding-bottom: 20px;
         padding-left: 30px;
         display: block;
       }
@@ -223,7 +233,7 @@ margin: auto;
       .flex-item{
         flex: 1 1 auto;
         margin-bottom: 55px;
-        margin: 120px;
+        margin: 100px;
       }
 
       .video-container {
@@ -236,11 +246,30 @@ margin: auto;
       
     }
 
+    .video-container-youtube {
+      position: relative;
+      overflow: hidden;
+      width: 560px; /* Set the width of the video container */
+      height: 315px; /* Set the height of the video container */
+      border-radius: 15px; /* Set the border radius for rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
+      margin-left: 100px;
+      
+    }
+    .video-container-youtube iframe {
+      width: 100%;
+      height: 100%;
+      border: none; /* Remove iframe border */
+      border-radius: 15px; /* Match the border radius of the container */
+      margin-right: 1000px;
+    }
+
     .video-container iframe {
       width: 100%;
       height: 100%;
       border: none; /* Remove iframe border */
       border-radius: 15px; /* Match the border radius of the container */
+     
     }
     .grid-container {
       display: grid;
@@ -260,7 +289,29 @@ margin: auto;
         font-size: 45px;
         padding-top: 10px;
         padding-left: 20px;
-        padding-bottom: 45px;
+        padding-bottom: 15px;
+        text-align: center
+     }
+     
+     .Arduinor{
+      font-family: "Roboto Slab", Arial;
+        
+        font-style: italic;
+        font-weight: 700;
+        font-size: 60px;
+        padding-top: 1px;
+        padding-bottom: 49px;
+        padding-left: 20px;
+        text-align: center
+     }
+     .Arduinox{
+      font-family: "Roboto Slab", Arial;
+        
+        font-style: italic;
+        font-weight: 700;
+        font-size: 60px;
+        padding-top: 39px;
+        padding-left: 20px;
         text-align: center
      }
       .space {
@@ -294,6 +345,16 @@ margin: auto;
         padding-top: 10px;
         padding-left: 20px;
       }
+      .q2 {
+        font-family: "Roboto Slab", Arial;
+        display: inline-block;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 40px;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+      }
       .ans1 {
         line-height: 27px;
         font-family: sans-serif;
@@ -307,10 +368,23 @@ margin: auto;
         font-family: sans-serif;
         font-size: 20px;
         padding-left: 52px;
-        padding-top: 42px;
+        padding-top: 30px;
+        margin-top: 30px;  
         width: 80%;
         text-align: left;
       }
+
+      .ans2x{
+        line-height: 27px;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding-left: 52px;
+        padding-top: 70px;
+        margin-top: 30px;  
+        width: 80%;
+        text-align: left;
+      }
+
       .list1 {
         
         font-family: sans-serif;
@@ -337,6 +411,7 @@ margin: auto;
       .pic1{
         padding-top: 0px;
         padding-left: 20px;
+        
       }
 
       .macbook1 {
@@ -394,14 +469,14 @@ margin: auto;
       }
       .centre-copy {
         display: flex;
-  align-items: center;
-  line-height: 27px;
-  font-family: sans-serif;
-  font-size: 20px;
-  width: 80%;
-  min-width: 50%;
-  padding: 20px;
-  text-align: left;
+        align-items: center;
+        line-height: 27px;
+        font-family: sans-serif;
+       font-size: 20px;
+       width: 80%;
+       min-width: 50%;
+        padding: 20px;
+        text-align: left;
       }
       .footext{
         padding-top: 10px;
@@ -435,8 +510,130 @@ margin: auto;
        
       }
 
+      .linux {
+        height: 180px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-left: 50px;
+        }
 
-    </style>
+        .nextcloud {
+        height: 180px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-left: 50px;
+        }
+
+        .nextcloud1 {
+        height: 180px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-left: 50px;
+        }
+
+        .rounded-img {
+    border-radius: 15px; 
+    width: 150px; 
+    height: auto; 
+    display: block; 
+    margin-top: 10px; 
+}
+
+.picaligndrone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ 
+  
+}
+
+.picaligndrone img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  
+}
+
+.circuit {
+  width: 80%;  
+  max-width: 600px;  
+  height: auto;  
+  border-radius: 15px; 
+  width: 290px; 
+}
+
+.correction {
+
+  margin-left: 50px;
+}
+
+.pic2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.pic2 img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 30px;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.picalignclock img {
+    
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.linuxes {
+    margin-left: 0px; 
+}
+
+.picalignd:nth-child(1) img {
+    margin-left: 200px; 
+}
+.picalignd:nth-child(2) img {
+    margin-left: 300px; 
+}
+
+.picalignd:nth-child(3) img {
+    margin-left: 600px; 
+}
+
+.pic1 img {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.pic1 img:hover {
+    transform: scale(1.44);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+.pic2 img:hover {
+    transform: scale(1.6); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.picaligndrone img:hover {
+    transform: scale(1.4);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.picalignclock img:hover {
+    transform: scale(1.28);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  margin-bottom: 15px; 
+}
+
+</style>
   </head>
   <body>
     <div class="bar">
@@ -470,8 +667,120 @@ margin: auto;
       </p>
     </div>
 
+    <p class = "Arduinor"> Featured Projects </p>  
+
+    <div class="grid">
+     
+      
+      
+      <div class="content1">
+        <p class="q1">Self-Hosted Nextcloud Server - January 2025 </p>
+        <p class="ans1">
+        I successfully configured and deployed Nextcloud on a Self-Hosted Linux Server using MariaDB, MySQL and PHP. I used cloudflaired secure tunneling and a domain name to publically access it anywhere. The process involved setting up a secure database, configuring server environments, troubleshooting errors, and ensuring seamless access and functionality of Nextcloud for online use
+        <p class="ans1">It was interesting connnecting various services, modifying configeration files to</p>
+          <ul class="Ulist">
+            <li class="list1">Configured and managed MariaDB databases, including setup, user permissions, and secure access using shell commands.</li>
+            <li class="list1">Installed, configured, and troubleshooted Apache2 and PHP to ensure compatibility with Nextcloud, optimizing performance and resolving server errors.</li>
+            <li class="list1">Administered a Linux server by managing file permissions, firewall settings, and implementing secure remote access using Cloudflared tunnels and domain configurations.</li>
+          </ul>
+        </p>
+      </div>
+
+     <div class="pic2"> 
+    <img class="linuxes" src="./Images/linux.JPG" alt="macbook cinematic shot">
+    <div class="picalignd"> 
+        <img class="nextcloud" src="./Images/next.JPG">
+    </div>
+    <div class="picalignd"> 
+        <img class="nextcloud1" src="./Images/login.JPG">
+    </div>
+</div>
+
+    </div>
+
+    <div class="grid">
+
+      <div class="pic1"> 
+        <div class="picaligndrone"> <img class = "circuit" src="./Images/dronme controlller.JPG" ></div>
+      </div>
+      <div class="flex-item">
+        <div class="content2">
+          <p class="q1">Drone Controller - September 2024</p>
+          <p class="ans1">
+            I created a dedicated controller for my drone, addressing the limitation of controlling it using only a mobile app. Despite its complexity, I completed the project in incremental steps, gaining valuable insights into circuit design, code and wireless communication. Here are some ways this endevour helped me gain practical experiance:
+          </p> 
+       </div>
+    
+        <ul class="Ulist">
+          <li class="list1">Explored the capabilities of the ESP-32 WiFi chip controller, gaining hands-on experience in wireless communication and IoT device development.</li>
+          <li class="list1">
+            Designed, built, and meticulously tested a custom circuit, refining my skills in electronic prototyping and troubleshooting. Learned the importance of rigorous testing for optimal performance
+          </li>
+          <li class="list1">
+            Successfully created a functional electronic device from the ground up, gaining insights into component selection, circuit design, and the overall process of bringing an idea to life 
+           </li>
+        </ul>
+       
+        
+        </div>
+
+      
+
+    </div>
+   
+
+    
+    <div class="grid-container">
+
+      <div class="box">
+
+        <p class="q2">Internet Light - March 2022</p>  
+       <div> 
+
+        <div class id="wrapper" >
+
+          <div class="video-container-youtube">
+            <iframe width="315" height="600" src="https://www.youtube.com/embed/pKSCUZrxQ5I" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        </div>
+
+        <p class = "ans2x"> Developed a web-controlled LED system using a Raspberry Pi, ESP32, and Linux. Despite using existing code, acquired valuable skills in Linux administration, domain management, and implemented Cloudflare for online accessibility. Some skills I aquired are: </p>
+        <ul class="Ulist">
+          <li class="list1"> Gained a deeper understanding of networking and self-hosting by experimenting with LAMP (Linux, Apache, MySQL, PHP) stack configurations.</li>
+          <li class="list1">
+            Enhanced my IoT knowledge by integrating and controlling a microcontroller (ESP32) through a Raspberry Pi using serial communication and web-based commands
+          </li>
+          <li class="list1">Learned about domain management and DNS configurations to make my web application accessible online while ensuring security with Cloudflare</li>
+          </ul>
+      </div>
+    
+      <div class="box">
+        
+        <p class="q2">Digital Clock - High School Project</p>
+        <div class="pic1">
+            <div class="picalignclock">
+                <img class="clockImage" src="./Images/cam.JPG" alt="Image 2">
+            </div>
+        </div>
+        <p class="ans1x">
+            I created a multifunctional clock that displays date and time, incorporating features such as accounting for leap years adding an extra day to February. Additionally, I designed it so that the date and time with buttons. This project taught me how to use external I2C Liquid Crystal Displays by utilizing C++ libraries to accomplish my goals. Some experience I gained are:
+        </p>
+        <ul class="Ulist">
+            <li class="list1">Developed problem-solving skills by addressing complexities such as leap years and ensuring accurate timekeeping, showcasing a logical and systematic approach to challenges in the project.</li>
+            <li class="list1">Learned to program and control an embedded system, integrating functionalities like date and time display using C++ libraries.</li>
+            <li class="list1">Acquired expertise in integrating external hardware components, specifically I2C Liquid Crystal Displays which helped me in future projects.</li>
+        </ul>
+    </div>
+    
+    </div>
+
+    <p class = "Arduinox"> All Projects </p> 
 
     <div class="gridshort">
+
+     
   
     <div class="flex-item">
       <div class="content2">
@@ -483,13 +792,9 @@ margin: auto;
     </div>
   
       <ul class="Ulist">
-        <li class="list1">Diagnosed the issue by opening controller and testing</li>
-        <li class="list1">
-           Added cushoning tape to reduce noise which worked surprisingly well
-        </li>
-        <li class="list1">
-         Learned about the inner working of a controller.
-       </li>
+        <li class="list1">Diagnosed the vibration motor issue by opening the controller and testing its internal components.</li>
+        <li class="list1">Applied cushioning tape inside the controller to reduce vibration noise, improving the gameplay experience.</li>
+        <li class="list1">Gained a deeper understanding of the Xbox controller’s internal mechanisms and how they work together.</li>
       </ul>
      
       
@@ -522,11 +827,9 @@ margin: auto;
           From a young age, the thought of owning a MacBook fueled my passion for technology. However, financial constraints posed a challenge. Undeterred, I devised a resourceful strategy to fulfill my dream. So, I started acquiring faulty MacBook’s through Facebook Marketplace. My goal was to refurbish these devices and make them fully operational for resale or personal use. 
         <p class="ans1">One notable achievement within this endeavor was the successful repair of a MacBook’s storage drive. The issue was identified as a faulty capacitor, which I skillfully resoldered, breathing new life into the computer and restoring it to a completely usable state.</p>
           <ul class="Ulist">
-          <li class="list1">Perfected soldering skills by replacing a dead capacitor</li>
-          <li class="list1">
-            Learned to diagnose and isolate issues through deduction 
-          </li>
-          <li class="list1">Marketed refurbished macbooks</li>
+            <li class="list1">Perfected soldering techniques by replacing a faulty capacitor on a MacBook's storage drive, restoring its functionality.</li>
+            <li class="list1">Developed strong diagnostic skills by identifying and isolating issues, such as the faulty capacitor, through methodical troubleshooting.</li>
+            <li class="list1">Gained experience in refurbishing and marketing MacBooks, ensuring they were fully functional for resale or personal use.</li>
           </ul>
         </p>
       </div>
@@ -540,9 +843,9 @@ margin: auto;
         <p class="ans1">
           An innovative initiative aimed at assisting elderly individuals in effortlessly managing their household waste. The project involved the design and implementation of a robot capable of lifting and moving a trash bin, controlled through a user-friendly mobile app. Through this hands-on experience, I gained valuable insights into the collaborative nature of product development through hand- on experience . Working within a team, I actively contributed to coding, video editing and active suggestions on creative ways to make the product easy to use, emphasizing the significance of effective communication and cooperation.
           <ul class="Ulist">
-          <li class="list1"> I acquired collaborative problem solving skills</li>
-          <li class="list1">
-           Understanding holistic product development lifecycle
+            <li class="list1">Developed collaborative problem-solving skills through teamwork, contributing to coding, video editing, and creative solutions.</li>
+            <li class="list1">Gained a deeper understanding of the holistic product development lifecycle, from design to implementation.</li>
+            <li class="list1">Configured Bluetooth connectivity between the mobile app and the device, integrating it with an Arduino Bluetooth module for seamless communication.</li>
           </li>
          
           </ul>
@@ -556,69 +859,6 @@ margin: auto;
       </div>
     </div>
     
-   
-     <p class = "Arduino"> Arduino Projects - 2021 ONWARDS </p>
-    <div class="grid-container">
-      <div class="box">
-        <h3>Drone Controller </h3>
-        <img src="./Images/dronme controlller.JPG" alt="drone controller">
-        <p class = "ans1x">I created a dedicated controller for my drone, addressing the limitation of controlling it using only a mobile app. Despite its complexity, I completed the project in incremental steps, gaining valuable insights into circuit design, code and wireless communication. Here are some ways this endevour helped me gain practical experiance: </p>
-        <ul class="Ulist">
-          <li class="list1">Explored the capabilities of the ESP-32 WiFi chip controller, gaining hands-on experience in wireless communication and IoT device development.</li>
-          <li class="list1">
-            Designed, built, and meticulously tested a custom circuit, refining my skills in electronic prototyping and troubleshooting. Learned the importance of rigorous testing for optimal performance.
-          </li>
-          <li class="list1">Successfully created a functional electronic device from the ground up, gaining insights into component selection, circuit design, and the overall process of bringing an idea to life.</li>
-          </ul>
-      </div>
-    
-      <div class="box">
-        <h3>Digital clock </h3>
-        <img src="./Images/cam.JPG" alt="Image 2">
-        
-        <p class = "ans1x">I created a multifunctional clock that displays date and time, incorporating features such as accounting for leap years adding an extra day to February. Additionally, I designed it so that the date and time with buttons. This project taught me how to use external I2C Liquid Crystal Displays by utilizing C++ libraries to accomplish my goals. Some experiance I gained are:  </p>
-        <ul class="Ulist">
-          <li class="list1">Developed problem-solving skills by addressing complexities such as leap years and ensuring accurate timekeeping, showcasing a logical and systematic approach to challenges in the project.</li>
-          <li class="list1">
-            Learned to program and control an embedded system, integrating functionalities like date and time display using C++ libraries.
-          </li>
-          <li class="list1">Acquired expertise in integrating external hardware components, specifically I2C Liquid Crystal Displays which helped me in future projects.</li>
-          </ul>
-      </div>
-    
-    </div>
-   
-    <div class="gridshort">
-  
-      <div class="flex-item">
-        <div class="content2">
-          <p class="q1">Internet Light</p>
-          <p class="ans1">
-            Developed a web-controlled LED system using a Raspberry Pi, ESP32, and Linux. Despite using existing code, acquired valuable skills in Linux administration, domain management, and implemented Cloudflare for online accessibility. Some skills I aquired are: 
-          </p>
-        
-      </div>
-    
-        <ul class="Ulist">
-          <li class="list1">I learned about networking and how to self-host a website</li>
-          <li class="list1">
-           Experimented with linux and leant to configure various things liek Msql, websockets etc 
-          </li>
-          <li class="list1">
-            Learned IOT related tasks like connecting and controlling a microcontroller through a raspberrypi. 
-           </li>
-
-        </ul>
-       
-        
-        </div>
-        <div class id="wrapper" >
-  
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/pKSCUZrxQ5I?si=3cE4l2yZS8tryWfE frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
   
 <div>
   <p class = "conclusion">Thank you for exploring my portfolio</p>
